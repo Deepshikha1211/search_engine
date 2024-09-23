@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional and fast search engine with intuitive UI and search history features.">
+    <title>QueryMaster - Professional Search Engine</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-search"></i> QueryMaster</h1>
+        </header>
+        <main>
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="What are you looking for today?">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="history">
+                <h2>Recent Searches</h2>
+                <ul id="search-history"></ul>
+                <button id="clear-history"><i class="fas fa-trash-alt"></i> Clear History</button>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2024 QueryMaster. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

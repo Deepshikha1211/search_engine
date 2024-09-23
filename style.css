@@ -1,0 +1,192 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #eef2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #4a90e2, #386bb5);
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+/* Main Content */
+main {
+    padding: 35px;
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+#search-input {
+    flex-grow: 1;
+    padding: 14px 18px;
+    font-size: 18px;
+    border: 2px solid #f0f0f0;
+    border-right: none;
+    border-radius: 12px 0 0 12px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+}
+
+#search-button {
+    padding: 14px 22px;
+    font-size: 18px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 0 12px 12px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #386bb5;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* History Section */
+.history h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-weight: 600;
+}
+
+#search-history {
+    list-style-type: none;
+    margin-bottom: 25px;
+}
+
+#search-history li {
+    background-color: #f0f0f0;
+    margin-bottom: 12px;
+    padding: 14px 18px;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: left;
+}
+
+#search-history li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the delete button */
+.delete-btn {
+    background: none;
+    border: none;
+    color: #e74c3c;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    float: right;
+}
+
+.delete-btn:hover {
+    color: #c0392b;
+}
+
+
+/* Clear History Button */
+#clear-history {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#clear-history:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .container {
+        border-radius: 0;
+    }
+
+    main {
+        padding: 25px;
+    }
+
+    #search-input, #search-button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
